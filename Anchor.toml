@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+anrx_eur_coin = "FQKhaRkCJsjC376Fz9VRNQ7qnuQJsBzyewRYU4cQFPhE"
+anrx_exchange_client = "7tRD147XfBvQX1vPXeWZ6X3ov2n2oDqP1HT1pDA5LFhM"
+anrx_exchange_rate = "HZZ1t1XKJw7YepVxex3xKRcCiV1gU7v55GpGgrFnHxxy"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+client = "yarn run ts-node client/*.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

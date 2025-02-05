@@ -1,0 +1,26 @@
+[workspace]
+members = [
+    "programs/*"
+]
+
+resolver = "2"
+
+[profile.release]
+overflow-checks = true
+lto = true
+codegen-units = 1
+panic = 'unwind'
+opt-level = 3
+debug = false
+split-debuginfo = '...'  # Platform-specific.
+strip = "none"
+debug-assertions = false
+
+[profile.release.build-override]
+opt-level = 0
+codegen-units = 256
+
+
+
+
+

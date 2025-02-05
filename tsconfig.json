@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "types": ["mocha", "chai"],
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@clientHelpers": ["client/helpers/lib.ts"]
+      // "rpc-websockets": [ "node_modules/rpc-websockets/dist/lib/client" ] // This is we use version, 8.0.1
+    },
+  }
+}
