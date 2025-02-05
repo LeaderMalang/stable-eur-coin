@@ -1,5 +1,3 @@
-Here’s the **updated README** with the **license section added** at the bottom. 🚀  
-
 ---
 
 ### **Stable Euro Coin & Exchange Programs - README**  
